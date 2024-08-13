@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body id="body">
+    <nav>
+        <div class='portfolio-name'>
+          <h2>Piyush Jha</h2>
+        </div>
+        <ul class='portfolio-links'>
+          <li><a href='#Home' class="nav-links nav-active-link  hideOnMobile">Home</a></li>
+          <li><a href='#about-section' class="nav-links hideOnMobile">About</a></li>
+          <li><a href='#project-section' class="nav-links hideOnMobile">Projects</a></li>
+          <li><a href='#contact-section' class="nav-links hideOnMobile">Contact</a></li>
+        </ul>
+        <li id="dark-mode-button"><a href=""><i class="fa-solid fa-moon"></i></a></li>
+        <li class="menu-button" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+       
+      </nav>
+      <ul class='portfolio-links-sidebar' id="portfolio-links-sidebar">
+        <li onclick=closeSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href='#Home' class="nav-links nav-active-link hideOnDesktop">Home</a></li>
+        <li><a href='#about-section' class="nav-links hideOnDesktop">About</a></li>
+        <li><a href='#project-section' class="nav-links hideOnDesktop">Projects</a></li>
+        <li><a href='#contact-section' class="nav-links hideOnDesktop">Contact</a></li>
+      </ul>
+      
+      <section class='home-section'>
+        <div class="home-first-section">
+            <h1>Hi, I'm Piyush Jha</h1>
+            <h2>Engineer, Web Developer</h2>
+            <p>I am a passionate frontend developer with a strong focus on creating visually appealing and highly interactive user interfaces. With expertise in HTML, CSS, JavaScript, and modern libraries like React.js, I bring designs to life while ensuring seamless user experiences across all devices.</p>
+            <div class="home-first-section-links">
+            <a href="https://github.com/piyushcode56/" target='_blank'>GitHub</a>
+            <a href="https://www.linkedin.com/in/piyushjhaengineer/" target='_blank'>LinkedIn</a>
+            <button><a href="Piyush Jha Resume.pdf" download="Piyush Jha Resume">Download CV</a></button>
+            </div>
+        </div>
+        <div class="home-second-section">
+            <img src='myimage.png' alt="" />
+        </div>
+      </section>
+      
+      <section class="about-section" id="about-section">
+        <h2>About Me</h2>
+        <p>I am a passionate frontend developer with a strong focus on creating visually appealing and highly interactive user interfaces. With expertise in HTML, CSS, JavaScript, and modern libraries like React.js and Vue.js, I bring designs to life while ensuring seamless user experiences across all devices. I am dedicated to writing clean, efficient code and constantly staying updated with the latest trends in web development. My goal is to bridge the gap between design and technology, delivering responsive and engaging websites that captivate users.</p>
+        <div class="about-section-links">
+        <a href="#" class="section-links active-link" onclick="openSection('personal-info')">Personal Info</a>
+        <a href="" class="section-links" onclick="openSection('technical-skills')">Technical Skills</a>
+        <a href="" class="section-links" onclick="openSection('education')">Education</a>
+        </div>
+      
+            <div class="section-contents active-section" id="personal-info"> 
+                <ul>
+                    <li>Name  <br><span>Piyush Ajay Jha</span></li>
+                    <li>Birthday <br><span>16 December 2003</span></li>
+                    <li>Language <br><span>English, Hindi</span></li>
+                    <li>Location <br><span>Mumbai</span></li>
+                </ul>
+            </div>
+            <div class="section-contents" id="technical-skills">
+                <ul >
+                    <li>Programming Language <br><span>Java</span></li>
+                    <li>Frontend <br><span>HTML, CSS, Javascript, React.js</span></li>
+                    <li>Database <br><span>SQL, MySQL</span></li>
+                    <li>Tools and Technologies <br><span>GitHub, VSCode, Intellij IDE, Git, Arduino, MySQL Workbench</span></li>
+                </ul>
+            </div>
+            <div class="section-contents" id="education">
+                <ul>
+                <li>Pursuing <br><span>Bachelor of Engineering(Shree L.R Tiwari College of Engineering)</span></li>
+                <li>2021 <br><span>Higher Secondary Certificate(Utkarsh Vidyalaya)</span></li>
+                
+                </ul>
+            </div>
+        
+      </section>
+      
+      <section class="portfolio-projects" id="project-section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <div class="project-image">
+                    <img src="movie.png" alt="">
+                </div>
+                <div class="project-info">
+                    <div class="project-name">
+                        <h3>WatchWave</h3>
+                        <div class="project-description">
+                            <p>Built a movie web application using HTML, CSS, JavaScript and React.js, encompassing front-end development.Created a visually appealing and user-friendly interface to browse and search for movies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-link">
+                    <ul>
+                        <li><a href="https://piyushcode56.github.io/watchwave/" target="_blank">Visit</a></li>
+                        <li><a href="https://github.com/piyushcode56/watchwave" target="_blank">Source Code</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="crypto.png" alt="">
+                </div>
+                <div class="project-info">
+                    <div class="project-name">
+                        <h3>CryptoList</h3>
+                        <div class="project-description">
+                            <p>Developed a cryptocurrency web application using HTML, CSS, JavaScript and React.js for front-end functionalities.Designed intuitive user interfaces for tracking cryptocurrency prices, trends, and portfolio management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-link">
+                    <ul>
+                        <li><a href="https://piyushcode56.github.io/crypto-list/" target="_blank">Visit</a></li>
+                        <li><a href="https://github.com/piyushcode56/crypto-list" target="_blank">Source Code</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="news app.png" alt="">
+                </div>
+                <div class="project-info">
+                    <div class="project-name">
+                        <h3>News App</h3>
+                        <div class="project-description">
+                            <p>Built a movie web application using HTML, CSS, JavaScript, encompassing front-end development.Created a visually appealing and user-friendly interface to browse and search for news.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-link">
+                    <ul>
+                        <li><a href="https://github.com/piyushcode56/news-app" target="_blank">Source Code</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="contact" id="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-section">
+        <div class="contact-me">
+            <h3>Contact Me</h3>
+            <span><i class="fa-regular fa-envelope"></i> piyushjha8282@gmail.com</span>
+            <span><i class="fa-solid fa-phone"></i> Phone: +0123456789</span>
+            <div class="find-me">
+                <h3 style="text-align: center; margin-bottom: 10px;">Find me</h3>
+                <ul>  
+                <span><a href="https://github.com/piyushcode56/"><i class="fa-brands fa-github"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/piyushjhaengineer/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
+                <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+                </ul>
+            </div>
+        </div>
+        <div class="feedback">
+            <ul>
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="text" placeholder="Your Email" id="email" required>
+            <input type="text" placeholder="Subject" id="subject" required class="subject-input">
+            <textarea name="" id="message" cols="" rows="7" placeholder="Message" ></textarea>
+            <button onclick=handleSubmit()>Submit</button>
+            </ul>
+            
+        </div>
+    </div>
+      </section>
+
+      <footer class="footer">
+        <p>Copyright ©2024 All rights reserved</p>
+      </footer>
+      <script src="script.js">
+        
+      </script>
+</body>
+</html>
